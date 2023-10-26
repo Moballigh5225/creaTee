@@ -12,13 +12,13 @@ const CustomButton = ({ title, type, customStyles, handleClick }) => {
     }
   };
   return (
-    <div
+    <button
       className={`px-2 py-1.2 flex-1 rounded-md ${customStyles}`}
       style={generateStyle(type)}
       onClick={handleClick}
     >
       {title}
-    </div>
+    </button>
   );
 };
 
